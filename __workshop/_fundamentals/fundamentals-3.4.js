@@ -9,6 +9,18 @@
 
 function sum(arr) {
   // Your code here
+  let total = 0;
+  if (
+    !Array.isArray(arr) || 
+    !arr.every(function(num) {return typeof num === "number"})
+    ) {
+    return undefined;
+    } else {
+  arr.forEach((element) => {
+  total += element;
+  });
+  return total;
+  }
 }
 
 // Part 2 - Test

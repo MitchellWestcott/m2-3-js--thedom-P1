@@ -12,7 +12,19 @@
 
 function sum(arr) {
   // Your code here
-}
+  let total = 0;
+  if (
+      !Array.isArray(arr) || 
+      arr.length !== 2 || 
+      typeof arr[0] !== "number" || 
+      typeof arr[1] !== "number") {
+    return undefined;
+  } else {
+    total = arr[0] + arr[1];
+  }
+    return total;
+  }
+
 
 // Part 2 - Test
 // --------------

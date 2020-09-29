@@ -11,7 +11,20 @@
 
 function getLetterAtIndex(str, index) {
   // Your code here
+  let letter = str.charAt(index);
+
+  if (
+    typeof str !== "string" ||
+    str.length === 0 ||
+    isNaN(letter) === false)
+     {
+    return undefined;
+     } else {
+       return letter;
+     }
 }
+
+console.log(getLetterAtIndex("asdf", "a"))
 
 // Part 2 - Test
 // --------------
